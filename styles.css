@@ -1,0 +1,58 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.calculator {
+    border: solid rgb(16, 15, 15) 4px;
+    display: grid;
+    grid-template-columns: repeat(4, 100px [col-start]);
+    grid-template-rows: [display] 170px [cldel] 85px repeat(4, 85px [ops]);
+    gap: 10px 10px;
+    padding: 10px;
+}
+
+.data-option {
+    border-radius: 5px;
+    font-size: 30px;
+}
+
+.data-option:hover {
+    background-color: azure;
+}
+
+.display {
+    grid-column-start: 1;
+    grid-column-end: 5;
+    background-color: azure;
+    border: solid black 2px;
+    border-radius: 5px;
+    text-align: right;
+    padding: 10px;
+}
+
+.prev-text {
+    padding-bottom: 15px;
+}
+
+.current-text {
+    font-size: 30px;
+}
+
+.clear {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row: 2;
+}
+
+.del {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row: 2;
+}
+
