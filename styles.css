@@ -1,5 +1,6 @@
 *, *::before, *::after {
     box-sizing: border-box;
+    user-select: none;
 }
 
 body {
@@ -17,10 +18,11 @@ body {
     padding: 10px;
 }
 
-.data-option {
+.data-option, .equal, .operation, .dot, .neg {
     border-radius: 5px;
     font-size: 30px;
 }
+
 
 .data-option:hover {
     background-color: azure;
@@ -48,11 +50,15 @@ body {
     grid-column-start: 1;
     grid-column-end: 3;
     grid-row: 2;
+    border-radius: 5px;
+    font-size: 30px;
 }
 
 .del {
     grid-column-start: 3;
     grid-column-end: 4;
     grid-row: 2;
+    border-radius: 5px;
+    font-size: 30px;
 }
 
